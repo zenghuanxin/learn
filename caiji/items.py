@@ -87,3 +87,18 @@ class JobboleItem(scrapy.Item):
         input_processor = MapCompose(date_convert)
     )
 
+
+class XmHouseItem(scrapy.Item):
+    title = scrapy.Field()
+    status = scrapy.Field()
+    comment_nums = scrapy.Field()
+    price = scrapy.Field()
+    location = scrapy.Field()
+    icon = scrapy.Field()
+    open_time = scrapy.Field()
+    telephone = scrapy.Field()
+    dev_company = scrapy.Field()
+    sale_location = scrapy.Field()
+    area = scrapy.Field()
+    height = scrapy.Field()
+    floor_info = scrapy.Field()
